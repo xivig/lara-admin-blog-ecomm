@@ -15,7 +15,7 @@
     <!-- ============================================================== -->
     <div id="main-wrapper">
 
-        @include('admin.partials.header')
+        @include('user.partials.header')
 
         @include('user.sidebar')
 
@@ -86,5 +86,5 @@
     <!-- End Wrapper -->
     <!-- ============================================================== -->
 
-   @include('admin.partials.customizer')
+{{--   @include('admin.partials.customizer')--}}
    @include('admin.partials.footer')
