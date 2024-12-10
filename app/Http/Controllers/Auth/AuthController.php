@@ -117,4 +117,35 @@ class AuthController extends Controller
 
         return Redirect('login');
     }
+
+
+    /**
+     * Write code on Method
+     *
+     * @return View ()
+     */
+    public function profile(): View
+    {
+        return view('auth.profile');
+    }
+
+    /**
+     * Write code on Method
+     *
+     * @return View ()
+     */
+    public function inbox(): View
+    {
+        return view('auth.inbox');
+    }
+
+    /**
+     * Write code on Method
+     *
+     * @return View ()
+     */
+    public function setting(): View
+    {
+        return view('auth.setting');
+    }
 }

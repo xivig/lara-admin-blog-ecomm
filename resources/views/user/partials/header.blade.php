@@ -12,24 +12,24 @@
             <!-- Logo -->
             <!-- ============================================================== -->
             <div class="navbar-brand">
-                <a href="index.html" class="logo">
+                <a href="{{url('dashboard')}}" class="logo">
                     <!-- Logo icon -->
                     <b class="logo-icon">
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                         <!-- Dark Logo icon -->
-                        <img src="{{asset('admin/assets/images/logo-icon.png')}}" alt="homepage" class="dark-logo"/>
+                        <img src="{{asset('user/assets/images/logo-icon.png')}}" alt="homepage" class="dark-logo"/>
                         <!-- Light Logo icon -->
-                        <img src="{{asset('admin/assets/images/logo-light-icon.png')}}" alt="homepage"
+                        <img src="{{asset('user/assets/images/logo-light-icon.png')}}" alt="homepage"
                              class="light-logo"/>
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
                     <span class="logo-text">
                                 <!-- dark Logo text -->
-                                <img src="{{asset('admin/assets/images/logo-text.png')}}" alt="homepage"
+                                <img src="{{asset('user/assets/images/logo-text.png')}}" alt="homepage"
                                      class="dark-logo"/>
                         <!-- Light Logo text -->
-                                <img src="{{asset('admin/assets/images/logo-light-text.png')}}" class="light-logo"
+                                <img src="{{asset('user/assets/images/logo-light-text.png')}}" class="light-logo"
                                      alt="homepage"/>
                             </span>
                 </a>
@@ -93,9 +93,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href="" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
-                        <img src="{{asset('admin/assets/images/users/2.jpg')}}" alt="user" class="rounded-circle"
+                        <img src="{{asset('user/assets/images/users/2.jpg')}}" alt="user" class="rounded-circle"
                              width="40">
-                        <span class="m-l-5 font-medium d-none d-sm-inline-block">Jonathan Doe <i
+                        <span class="m-l-5 font-medium d-none d-sm-inline-block">{{ auth()->user()->name }} <i
                                 class="mdi mdi-chevron-down"></i></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -104,23 +104,21 @@
                                 </span>
                         <div class="d-flex no-block align-items-center p-15 bg-primary text-white m-b-10">
                             <div class="">
-                                <img src="{{asset('admin/assets/images/users/2.jpg')}}" alt="user"
+                                <img src="{{asset('user/assets/images/users/2.jpg')}}" alt="user"
                                      class="rounded-circle" width="60">
                             </div>
                             <div class="m-l-10">
-                                <h4 class="m-b-0">Jonathan Doe</h4>
-                                <p class=" m-b-0">jon@gmail.com</p>
+                                <h4 class="m-b-0">{{ auth()->user()->name }}</h4>
+                                <p class=" m-b-0">{{ auth()->user()->email }}</p>
                             </div>
                         </div>
                         <div class="profile-dis scrollable">
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{route('user-profile')}}">
                                 <i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                            <a class="dropdown-item" href="javascript:void(0)">
-                                <i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{route('user-inbox')}}">
                                 <i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="javascript:void(0)">
+                            <a class="dropdown-item" href="{{route('user-setting')}}">
                                 <i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
                             <div class="dropdown-divider"></div>
                             <a class="btn btn-danger btn-lg dropdown-item sidebar-link waves-effect waves-dark sidebar-link"

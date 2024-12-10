@@ -19,9 +19,15 @@
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
-                                    <a href="index.html" class="sidebar-link">
-                                        <i class="mdi mdi-adjust"></i>
-                                        <span class="hide-menu"> Classic </span>
+                                    <a href="<?php echo e(route('user-profile')); ?>" class="sidebar-link">
+                                        <i class="ti-user"></i>
+                                        <span class="hide-menu"> User Profile </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="<?php echo e(route('user-setting')); ?>" class="sidebar-link">
+                                        <i class="ti-settings"></i>
+                                        <span class="hide-menu"> User Setting </span>
                                     </a>
                                 </li>
 

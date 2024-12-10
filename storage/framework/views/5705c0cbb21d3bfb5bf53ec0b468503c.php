@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title', 'Xivig User registration '); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -10,26 +8,26 @@
 
 
     <div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
+        <div class="container-fluid py-5">
 
-        <?php $__sessionArgs = ['success'];
+            <?php $__sessionArgs = ['success'];
 if (session()->has($__sessionArgs[0])) :
 if (isset($value)) { $__sessionPrevious[] = $value; }
 $value = session()->get($__sessionArgs[0]); ?>
             <div class="alert alert-success" role="alert">
-              <?php echo e($value); ?>
+                <?php echo e($value); ?>
 
             </div>
-        <?php unset($value);
+            <?php unset($value);
 if (isset($__sessionPrevious) && !empty($__sessionPrevious)) { $value = array_pop($__sessionPrevious); }
 if (isset($__sessionPrevious) && empty($__sessionPrevious)) { unset($__sessionPrevious); }
 endif;
 unset($__sessionArgs); ?>
 
-        <h1 class="display-5 fw-bold">Hi, <?php echo e(auth()->user()->name); ?></h1>
-        <h2>Welcome to dashboard</h2>
+            <h1 class="display-5 fw-bold">Hi, <?php echo e(auth()->user()->name); ?></h1>
+            <h2>Welcome to dashboard</h2>
+        </div>
     </div>
-
     <!-- ============================================================== -->
     <!-- dashboard -->
     <!-- ============================================================== -->

@@ -41,3 +41,16 @@ Route::get('register', [AuthController::class, 'registration'])->name('register'
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
 Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+
+//route group
+Route::prefix('dashboard')->group(function (){
+Route::get('/profile', [AuthController::class, 'profile'])->middleware('auth')->name('user-profile');
+Route::get('/inbox', [AuthController::class, 'inbox'])->middleware('auth')->name('user-inbox');
+Route::get('/setting', [AuthController::class, 'setting'])->middleware('auth')->name('user-setting');
+});
+
+//if page not found load 404
+Route::fallback(function(){
+    return view('404');
+});
