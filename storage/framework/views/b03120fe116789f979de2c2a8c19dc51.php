@@ -1,4 +1,4 @@
-@include('admin.partials.head')
+<?php echo $__env->make('admin.partials.head', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 <body>
     <!-- ============================================================== -->
@@ -15,9 +15,9 @@
     <!-- ============================================================== -->
     <div id="main-wrapper">
 
-        @include('admin.partials.header')
+        <?php echo $__env->make('admin.partials.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-        @include('user.sidebar')
+        <?php echo $__env->make('user.sidebar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
@@ -55,12 +55,12 @@
             <!-- ============================================================== -->
             <div class="container-fluid">
 
-                @yield('content')
+                <?php echo $__env->yieldContent('content'); ?>
 
-                {{-- @include('admin.main') --}}
-                {{-- @include('admin.main1') --}}
-                {{-- @include('admin.show') --}}
-{{--                @include('admin.edit')--}}
+                
+                
+                
+
 
             </div>
             <!-- ============================================================== -->
@@ -88,5 +88,6 @@
     <!-- End Wrapper -->
     <!-- ============================================================== -->
 
-   @include('admin.partials.customizer')
-   @include('admin.partials.footer')
+   <?php echo $__env->make('admin.partials.customizer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+   <?php echo $__env->make('admin.partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php /**PATH F:\laravel_project_all\1\lara-admin-blog-ecomm\resources\views/admin.blade.php ENDPATH**/ ?>
