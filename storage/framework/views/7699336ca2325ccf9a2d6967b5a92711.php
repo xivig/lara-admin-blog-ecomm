@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('title', 'Latest works'); ?>
 <?php $__env->startSection('page-title', 'Latest works'); ?>
 <?php $__env->startSection('page-heading', 'Portfolio'); ?>
