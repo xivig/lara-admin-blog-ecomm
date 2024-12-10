@@ -1,9 +1,8 @@
-@extends('blog')
-@section('title', 'Blog page')
-{{--@section('title', 'Contact Us')--}}
-{{--@section('page-title', 'Contact Us')--}}
-{{--@section('page-heading', 'Get in Touch')--}}
-@section('content')
+<?php $__env->startSection('title', 'Blog page'); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
 <section class="section blog-wrap bg-gray">
 	<div class="container">
 		<div class="row">
@@ -11,7 +10,7 @@
 				<div class="row">
 					<div class="col-lg-12 mb-5">
 						<div class="single-blog-item">
-							<img loading="lazy" src="{{asset('xivig-blog/images/blog/3.jpg')}}" alt="blog" class="img-fluid rounded">
+							<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/3.jpg')); ?>" alt="blog" class="img-fluid rounded">
 
 							<div class="blog-item-content bg-white p-5">
 								<div class="blog-item-meta bg-gray pt-2 pb-1 px-3">
@@ -166,7 +165,7 @@
 					</div>
 
 					<div class="sidebar-widget card border-0 mb-3">
-						<img loading="lazy" src="{{asset('xivig-blog/images/blog/blog-author.jpg')}}" alt="blog-author" class="img-fluid">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/blog-author.jpg')); ?>" alt="blog-author" class="img-fluid">
 						<div class="card-body p-4 text-center">
 							<h5 class="mb-0 mt-4">Arther Conal</h5>
 							<p>Digital Marketer</p>
@@ -196,7 +195,7 @@
 						<h5>Latest Posts</h5>
 
                         <div class="media border-bottom py-3">
-                            <a href="#"><img loading="lazy" class="mr-4" src="{{asset('xivig-blog/images/blog/bt-3.jpg')}}" alt="blog"></a>
+                            <a href="#"><img loading="lazy" class="mr-4" src="<?php echo e(asset('xivig-blog/images/blog/bt-3.jpg')); ?>" alt="blog"></a>
                             <div class="media-body">
                                 <h6 class="my-2"><a href="#">Thoughtful living in los Angeles</a></h6>
                                 <span class="text-sm text-muted">03 Mar 2018</span>
@@ -204,7 +203,7 @@
                         </div>
 
                         <div class="media border-bottom py-3">
-                            <a href="#"><img loading="lazy" class="mr-4" src="{{asset('xivig-blog/images/blog/bt-2.jpg')}}" alt="blog"></a>
+                            <a href="#"><img loading="lazy" class="mr-4" src="<?php echo e(asset('xivig-blog/images/blog/bt-2.jpg')); ?>" alt="blog"></a>
                             <div class="media-body">
                                 <h6 class="my-2"><a href="#">Vivamus molestie gravida turpis.</a></h6>
                                 <span class="text-sm text-muted">03 Mar 2018</span>
@@ -212,7 +211,7 @@
                         </div>
 
                         <div class="media py-3">
-                            <a href="#"><img loading="lazy" class="mr-4" src="{{asset('xivig-blog/images/blog/bt-1.jpg')}}" alt="blog"></a>
+                            <a href="#"><img loading="lazy" class="mr-4" src="<?php echo e(asset('xivig-blog/images/blog/bt-1.jpg')); ?>" alt="blog"></a>
                             <div class="media-body">
                                 <h6 class="my-2"><a href="#">Fusce lobortis lorem at ipsum semper sagittis</a></h6>
                                 <span class="text-sm text-muted">03 Mar 2018</span>
@@ -237,4 +236,6 @@
 		</div>
 	</div>
 </section>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('blog', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\0.ProjectAll\laravel_all\lara-admin-blog-ecomm\resources\views/blog/blog-post.blade.php ENDPATH**/ ?>

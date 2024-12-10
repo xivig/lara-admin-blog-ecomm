@@ -10,6 +10,12 @@ Route::get('/', function () {
 Route::get('/blog', function () {
     return view('blog.blog-content');
 });
+Route::get('/blog-post', function () {
+    return view('blog.blog-post');
+});
+Route::get('/blog-list', function () {
+    return view('blog.blog-list');
+});
 Route::get('/about', function () {
     return view('home.about');
 });
@@ -18,6 +24,9 @@ Route::get('/contact', function () {
 });
 Route::get('/services', function () {
     return view('home.services');
+});
+Route::get('/pricing', function () {
+    return view('home.pricing');
 });
 Route::get('/project', function () {
     return view('home.project');

@@ -1,4 +1,7 @@
 <?php $__env->startSection('title', 'Blog page'); ?>
+
+
+
 <?php $__env->startSection('content'); ?>
 <section class="page-title bg-1">
   <div class="container">
@@ -8,7 +11,7 @@
           <span class="text-white">Our blog</span>
           <h1 class="text-capitalize mb-4 text-lg">Blog articles</h1>
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="<?php echo e(url('/')); ?>" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
             <li class="list-inline-item text-white-50">Our blog</li>
           </ul>
@@ -25,71 +28,70 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 mb-5">
 						<div class="blog-item">
-							<img loading="lazy" src="images/blog/1.jpg" alt="blog" class="img-fluid rounded">
+							<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/1.jpg')); ?>" alt="blog" class="img-fluid rounded">
 
 							<div class="blog-item-content bg-white p-4">
 								<div class="blog-item-meta  py-1 px-2">
 									<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
 								</div>
 
-								<h3 class="mt-3 mb-3"><a href="blog-single.html">Improve design with typography?</a></h3>
+								<h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a></h3>
 								<p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium
 									pariatur repudiandae!</p>
 
-								<a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 mb-5">
-						<div class="blog-item">
-							<img loading="lazy" src="images/blog/2.jpg" alt="blog" class="img-fluid rounded">
-
-							<div class="blog-item-content bg-white p-4">
-								<div class="blog-item-meta py-1 px-2">
-									<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Design</span>
-								</div>
-
-								<h3 class="mt-3 mb-3"><a href="blog-single.html">Interactivity connect consumer</a></h3>
-								<p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium
-									pariatur repudiandae!</p>
-
-								<a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-6 col-md-6 mb-5">
-						<div class="blog-item">
-							<img loading="lazy" src="images/blog/3.jpg" alt="blog" class="img-fluid rounded">
-
-							<div class="blog-item-content bg-white p-4">
-								<div class="blog-item-meta py-1 px-2">
-									<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Community</span>
-								</div>
-
-								<h3 class="mt-3 mb-3"><a href="blog-single.html">Marketing Strategy to bring more affect</a></h3>
-								<p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium
-									pariatur repudiandae!</p>
-
-								<a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
+								<a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 mb-5">
 						<div class="blog-item">
-							<img loading="lazy" src="images/blog/4.jpg" alt="blog" class="img-fluid rounded">
+							<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/2.jpg')); ?>" alt="blog" class="img-fluid rounded">
 
 							<div class="blog-item-content bg-white p-4">
-								<div class="blog-item-meta py-1 px-2">
-									<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Marketing</span>
+								<div class="blog-item-meta  py-1 px-2">
+									<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
 								</div>
 
-								<h3 class="mt-3 mb-3"><a href="blog-single.html">Marketing Strategy to bring more affect</a></h3>
+								<h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a></h3>
 								<p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium
 									pariatur repudiandae!</p>
 
-								<a href="blog-single.html" class="btn btn-small btn-main btn-round-full">Learn More</a>
+								<a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+                    <div class="col-lg-6 col-md-6 mb-5">
+						<div class="blog-item">
+							<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/3.jpg')); ?>" alt="blog" class="img-fluid rounded">
+
+							<div class="blog-item-content bg-white p-4">
+								<div class="blog-item-meta  py-1 px-2">
+									<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
+								</div>
+
+								<h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a></h3>
+								<p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium
+									pariatur repudiandae!</p>
+
+								<a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
+							</div>
+						</div>
+					</div>
+                    <div class="col-lg-6 col-md-6 mb-5">
+						<div class="blog-item">
+							<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/4.jpg')); ?>" alt="blog" class="img-fluid rounded">
+
+							<div class="blog-item-content bg-white p-4">
+								<div class="blog-item-meta  py-1 px-2">
+									<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
+								</div>
+
+								<h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a></h3>
+								<p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium
+									pariatur repudiandae!</p>
+
+								<a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
 							</div>
 						</div>
 					</div>
@@ -115,7 +117,7 @@
 					</div>
 
 					<div class="sidebar-widget card border-0 mb-3">
-						<img loading="lazy" src="images/blog/blog-author.jpg" alt="blog-author" class="img-fluid">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/blog-author.jpg')); ?>" alt="blog-author" class="img-fluid">
 						<div class="card-body p-4 text-center">
 							<h5 class="mb-0 mt-4">Arther Conal</h5>
 							<p>Digital Marketer</p>
@@ -145,7 +147,7 @@
 						<h5>Latest Posts</h5>
 
 						<div class="media border-bottom py-3">
-							<a href="#"><img loading="lazy" class="mr-4" src="images/blog/bt-3.jpg" alt="blog"></a>
+							<a href="#"><img loading="lazy" class="mr-4" src="<?php echo e(asset('xivig-blog/images/blog/bt-3.jpg')); ?>" alt="blog"></a>
 							<div class="media-body">
 								<h6 class="my-2"><a href="#">Thoughtful living in los Angeles</a></h6>
 								<span class="text-sm text-muted">03 Mar 2018</span>
@@ -153,7 +155,7 @@
 						</div>
 
 						<div class="media border-bottom py-3">
-							<a href="#"><img loading="lazy" class="mr-4" src="images/blog/bt-2.jpg" alt="blog"></a>
+							<a href="#"><img loading="lazy" class="mr-4" src="<?php echo e(asset('xivig-blog/images/blog/bt-2.jpg')); ?>" alt="blog"></a>
 							<div class="media-body">
 								<h6 class="my-2"><a href="#">Vivamus molestie gravida turpis.</a></h6>
 								<span class="text-sm text-muted">03 Mar 2018</span>
@@ -161,7 +163,7 @@
 						</div>
 
 						<div class="media py-3">
-							<a href="#"><img loading="lazy" class="mr-4" src="images/blog/bt-1.jpg" alt="blog"></a>
+							<a href="#"><img loading="lazy" class="mr-4" src="<?php echo e(asset('xivig-blog/images/blog/bt-1.jpg')); ?>" alt="blog"></a>
 							<div class="media-body">
 								<h6 class="my-2"><a href="#">Fusce lobortis lorem at ipsum semper sagittis</a></h6>
 								<span class="text-sm text-muted">03 Mar 2018</span>

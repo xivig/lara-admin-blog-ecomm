@@ -13,12 +13,12 @@
 					<h2 class="mt-3 mb-4 position-relative content-title">We are dynamic team of creative people</h2>
 					<p class="mb-5">We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier.</p>
 
-					<a href="contact.html" class="btn btn-main btn-round-full">Get started</a>
+					<a href="<?php echo e(url('/contact')); ?>" class="btn btn-main btn-round-full">Get started</a>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="about-item-img">
-					<img loading="lazy" src="images/about/home-7.jpg" alt="about-image" class="img-fluid">
+					<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/about/home-7.jpg')); ?>" alt="about-image" class="img-fluid">
 				</div>
 			</div>
 		</div>
@@ -105,20 +105,20 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="images/team/team-1.jpg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/team/team-1.jpg')); ?>" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/xivig" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<a href="https://twitter.com/xivig" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/xivig/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+									<a href="https://xivig.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -133,20 +133,20 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="images/team/team-2.jpg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/team/team-2.jpg')); ?>" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/xivig" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<a href="https://twitter.com/xivig" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/xivig/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+									<a href="https://xivig.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -161,20 +161,20 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5 ">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="images/team/team-3.jpg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/team/team-3.jpg')); ?>" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/xivig" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<a href="https://twitter.com/xivig" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/xivig/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+									<a href="https://xivig.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -188,20 +188,20 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5 mb-lg-0">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="images/team/team-4.jpg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/team/team-4.jpg')); ?>" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/xivig" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<a href="https://twitter.com/xivig" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/xivig/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+									<a href="https://xivig.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -216,20 +216,20 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5 mb-lg-0">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="images/team/team-6.jpg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/team/team-6.jpg')); ?>" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/xivig" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<a href="https://twitter.com/xivig" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/xivig/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+									<a href="https://xivig.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -244,20 +244,20 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5 mb-lg-0 ">
 					<div class="team-item position-relative">
-						<img loading="lazy" src="images/team/team-5.jpg" alt="team" class="img-fluid w-100">
+						<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/team/team-5.jpg')); ?>" alt="team" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
-									<a href="https://www.facebook.com/themefisher" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+									<a href="https://www.facebook.com/xivig" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://twitter.com/themefisher" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<a href="https://twitter.com/xivig" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://www.instagram.com/themefisher/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									<a href="https://www.instagram.com/xivig/" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a href="https://themefisher.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+									<a href="https://xivig.com/" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -295,7 +295,7 @@
 
 					<div class="testimonial-author">
 						<h5 class="mb-0 text-capitalize">Thomas Johnson</h5>
-						<p>Excutive Director,themefisher</p>
+						<p>Excutive Director,xivig</p>
 					</div>
 				</div>
 			</div>
@@ -307,7 +307,7 @@
 
 					<div class="testimonial-author">
 						<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
-						<p>Excutive Director,themefisher</p>
+						<p>Excutive Director,xivig</p>
 					</div>
 				</div>
 			</div>
@@ -319,7 +319,7 @@
 
 					<div class="testimonial-author">
 						<h5 class="mb-0 text-capitalize">James Watson</h5>
-						<p>Excutive Director,themefisher</p>
+						<p>Excutive Director,xivig</p>
 					</div>
 				</div>
 			</div>
@@ -331,7 +331,7 @@
 
 					<div class="testimonial-author">
 						<h5 class="mb-0 text-capitalize">Mickel hussy</h5>
-						<p>Excutive Director,themefisher</p>
+						<p>Excutive Director,xivig</p>
 					</div>
 				</div>
 			</div>
