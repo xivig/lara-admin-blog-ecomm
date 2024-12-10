@@ -43,13 +43,13 @@
 
 					<ul class="social-icons list-inline mt-5">
 						<li class="list-inline-item">
-							<a href="http://www.themefisher.com"><i class="fab fa-facebook-f"></i></a>
+							<a href="http://www.xivig.com"><i class="fab fa-facebook-f"></i></a>
 						</li>
 						<li class="list-inline-item">
-							<a href="http://www.themefisher.com"><i class="fab fa-twitter"></i></a>
+							<a href="http://www.xivig.com"><i class="fab fa-twitter"></i></a>
 						</li>
 						<li class="list-inline-item">
-							<a href="http://www.themefisher.com"><i class="fab fa-linkedin-in"></i></a>
+							<a href="http://www.xivig.com"><i class="fab fa-linkedin-in"></i></a>
 						</li>
 					</ul>
 				</div>
