@@ -1,16 +1,15 @@
-@extends('blog')
-@section('title', 'Blog page')
-{{--@section('title', 'Contact Us')--}}
-{{--@section('page-title', 'Contact Us')--}}
-{{--@section('page-heading', 'Get in Touch')--}}
-@section('content')
+<?php $__env->startSection('title', 'Blog page'); ?>
+
+
+
+<?php $__env->startSection('content'); ?>
     <section class="section blog-wrap bg-gray">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="blog-item">
-                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/1.jpg')}}" alt="blog"
+                        <img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/1.jpg')); ?>" alt="blog"
                              class="img-fluid rounded">
 
                         <div class="blog-item-content bg-white p-4">
@@ -18,19 +17,19 @@
                                 <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
                             </div>
 
-                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>
+                            <h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a>
                             </h3>
                             <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur
                                 accusantium
                                 pariatur repudiandae!</p>
 
-                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>
+                            <a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="blog-item">
-                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/2.jpg')}}" alt="blog"
+                        <img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/2.jpg')); ?>" alt="blog"
                              class="img-fluid rounded">
 
                         <div class="blog-item-content bg-white p-4">
@@ -38,20 +37,20 @@
                                 <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
                             </div>
 
-                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>
+                            <h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a>
                             </h3>
                             <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur
                                 accusantium
                                 pariatur repudiandae!</p>
 
-                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>
+                            <a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="blog-item">
-                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/3.jpg')}}" alt="blog"
+                        <img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/3.jpg')); ?>" alt="blog"
                              class="img-fluid rounded">
 
                         <div class="blog-item-content bg-white p-4">
@@ -59,19 +58,19 @@
                                 <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
                             </div>
 
-                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>
+                            <h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a>
                             </h3>
                             <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur
                                 accusantium
                                 pariatur repudiandae!</p>
 
-                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>
+                            <a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-5">
                     <div class="blog-item">
-                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/4.jpg')}}" alt="blog"
+                        <img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/4.jpg')); ?>" alt="blog"
                              class="img-fluid rounded">
 
                         <div class="blog-item-content bg-white p-4">
@@ -79,13 +78,13 @@
                                 <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
                             </div>
 
-                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>
+                            <h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>">Improve design with typography?</a>
                             </h3>
                             <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur
                                 accusantium
                                 pariatur repudiandae!</p>
 
-                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>
+                            <a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -106,4 +105,6 @@
             </div>
         </div>
     </section>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('blog', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\0.ProjectAll\laravel_all\lara-admin-blog-ecomm\resources\views/blog/blog-list.blade.php ENDPATH**/ ?>

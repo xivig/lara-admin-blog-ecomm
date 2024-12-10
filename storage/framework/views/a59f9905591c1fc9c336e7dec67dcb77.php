@@ -27,8 +27,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg px-0 py-4">
-                        <a class="navbar-brand" href="index.html">
-                            Mega<span>kit.</span>
+                        <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
+                            Xivig
                         </a>
 
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
@@ -41,8 +41,9 @@
                                 <li class="nav-item active">
                                     <a class="nav-link" href="<?php echo e(url('/')); ?>">Home</a>
                                 </li>
+                                 <li class="nav-item @contact"><a class="nav-link" href="<?php echo e(url('/about')); ?>">About</a></li>
                                 <li class="nav-item dropdown @about">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About <i class="fas fa-chevron-down small"></i></a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product <i class="fas fa-chevron-down small"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdown03">
                                         <li><a class="dropdown-item @company" href="<?php echo e(url('/about')); ?>">Our company</a></li>
                                         <li><a class="dropdown-item @pricing" href="<?php echo e(url('/pricing')); ?>">Pricing</a></li>
@@ -62,9 +63,9 @@
                                 <li class="nav-item dropdown @blog">
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog <i class="fas fa-chevron-down small"></i></a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                        <li><a class="dropdown-item @blogGrid" href="<?php echo e(url('/blog')); ?>">Blog Grid</a></li>
-                                        <li><a class="dropdown-item @blogSidebar" href="blog-sidebar.html">Blog with Sidebar</a></li>
-                                        <li><a class="dropdown-item @blogSingle" href="blog-single.html">Blog Single</a></li>
+                                        <li><a class="dropdown-item @blogGrid" href="<?php echo e(url('/blog-list')); ?>">Blog Grid</a></li>
+                                        <li><a class="dropdown-item @blogSidebar" href="<?php echo e(url('/blog')); ?>">Blog with Sidebar</a></li>
+                                        <li><a class="dropdown-item @blogSingle" href="<?php echo e(url('/blog-post')); ?>">Blog Single</a></li>
 
                                         <li class="dropdown dropdown-submenu dropleft">
                                             <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
