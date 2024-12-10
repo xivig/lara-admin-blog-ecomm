@@ -4,7 +4,23 @@ use App\Http\Controllers\Auth\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+     $title = 'Home page';
+    return view('home.content',['title' => $title]);
+});
+Route::get('/blog', function () {
+    return view('blog.blog-content');
+});
+Route::get('/about', function () {
+    return view('home.about');
+});
+Route::get('/contact', function () {
+    return view('home.contact');
+});
+Route::get('/services', function () {
+    return view('home.services');
+});
+Route::get('/project', function () {
+    return view('home.project');
 });
 //Route::get('/admin-dashboard', function () {
 //    return view('user');

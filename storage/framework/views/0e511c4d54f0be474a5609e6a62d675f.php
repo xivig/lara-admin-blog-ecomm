@@ -31,4 +31,4 @@
 </body>
 
 </html>
-<?php /**PATH F:\laravel_project_all\1\lara-admin-blog-ecomm\resources\views/user/partials/footer.blade.php ENDPATH**/ ?>
+<?php /**PATH F:\laravel_project_all\1\lara-admin-blog-ecomm\resources\views/user/partials/footer.blade.php.php ENDPATH**/ ?>

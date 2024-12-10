@@ -1,3 +1,6 @@
-<div>
-    <!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
-</div>
+@include('blog.partials.head')
+@include('blog.partials.header')
+
+@yield('content')
+
+@include('blog.partials.footer')
