@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\Tag;
+use App\Models\Author;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Tag>
+ * @extends Factory<Author>
  */
-class TagFactory extends Factory
+class AuthorFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,10 @@ class TagFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
-            //
+            'user_id' => fake()->biasedNumberBetween(1),
+            'nickname' => fake()->firstNameMale(),
         ];
     }
 }
