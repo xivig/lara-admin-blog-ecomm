@@ -1,4 +1,4 @@
-@extends('user')
+@extends('admin')
 
 @section('title', 'Xivig User Login ')
 
