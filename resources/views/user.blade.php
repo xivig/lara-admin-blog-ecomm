@@ -1,4 +1,4 @@
-@include('admin.partials.head')
+@include('user.partials.head')
 
 <body>
     <!-- ============================================================== -->
@@ -70,8 +70,8 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-                All Rights Reserved by Nice admin. Designed and Developed by
-                <a href="https://wrappixel.com">WrapPixel</a>.
+                All Rights Reserved by Xivig. Designed and Developed by
+                <a href="https://xivig.com">Xivig</a>.
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -88,4 +88,4 @@
     <!-- ============================================================== -->
 
 {{--   @include('admin.partials.customizer')--}}
-   @include('admin.partials.footer')
+   @include('user.partials.footer')

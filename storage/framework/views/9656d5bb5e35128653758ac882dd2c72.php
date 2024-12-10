@@ -1,4 +1,4 @@
-<?php echo $__env->make('admin.partials.head', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php echo $__env->make('user.partials.head', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 <body>
     <!-- ============================================================== -->
@@ -70,8 +70,8 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-                All Rights Reserved by Nice admin. Designed and Developed by
-                <a href="https://wrappixel.com">WrapPixel</a>.
+                All Rights Reserved by Xivig. Designed and Developed by
+                <a href="https://xivig.com">Xivig</a>.
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -88,5 +88,5 @@
     <!-- ============================================================== -->
 
 
-   <?php echo $__env->make('admin.partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+   <?php echo $__env->make('user.partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php /**PATH F:\laravel_project_all\1\lara-admin-blog-ecomm\resources\views/user.blade.php ENDPATH**/ ?>

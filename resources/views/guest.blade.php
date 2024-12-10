@@ -1,4 +1,4 @@
-@include('admin.partials.head')
+@include('user.partials.head')
 
 <body>
     <!-- ============================================================== -->
@@ -39,4 +39,4 @@
     <!-- ============================================================== -->
 
 {{--   @include('admin.partials.customizer')--}}
-   @include('admin.partials.footer')
+   @include('user.partials.footer')

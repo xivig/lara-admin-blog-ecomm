@@ -30,10 +30,20 @@
 
 
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="authentication-login1.html" aria-expanded="false">
-                                <i class="mdi mdi-directions"></i>
-                                <span class="hide-menu">Log Out</span>
+                            <a class="btn btn-danger btn-lg dropdown-item sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                                <i class="fa fa-power-off m-r-5 m-l-5"></i>
+                                {{ __('Logout') }}
                             </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="GET" class="d-none">
+                                @csrf
+                            </form>
+{{--                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="authentication-login1.html" aria-expanded="false">--}}
+{{--                                <i class="mdi mdi-directions"></i>--}}
+{{--                                <span class="hide-menu">Log Out</span>--}}
+{{--                            </a>--}}
                         </li>
                     </ul>
                 </nav>
