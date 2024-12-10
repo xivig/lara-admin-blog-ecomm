@@ -57,9 +57,6 @@
 	</div>
 </section>
 
-<div class="google-map">
-	<div id="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="Megakit"></div>
-</div>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('home', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\0.ProjectAll\laravel_all\lara-admin-blog-ecomm\resources\views/home/contact.blade.php ENDPATH**/ ?>
