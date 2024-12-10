@@ -63,4 +63,4 @@ unset($__sessionArgs); ?>
     <!-- ============================================================== -->
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('admin', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\laravel_project_all\1\lara-admin-blog-ecomm\resources\views/auth/dashboard.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('user', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\laravel_project_all\1\lara-admin-blog-ecomm\resources\views/auth/dashboard.blade.php ENDPATH**/ ?>
