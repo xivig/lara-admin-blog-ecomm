@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Picture;
 use App\Models\Post;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -10,9 +12,11 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(): View
     {
-        //
+        $images = Picture::all();
+        $posts = Post::query()->paginate(10);
+        return view('blog.blog-list',compact('posts', 'images'));
     }
 
     /**

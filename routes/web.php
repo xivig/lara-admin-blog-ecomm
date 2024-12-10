@@ -1,11 +1,12 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-     $title = 'Home page';
-    return view('home.content',['title' => $title]);
+    $title = 'Home page';
+    return view('home.content', ['title' => $title]);
 });
 Route::get('/blog', function () {
     return view('blog.blog-content');
@@ -13,9 +14,11 @@ Route::get('/blog', function () {
 Route::get('/blog-post', function () {
     return view('blog.blog-post');
 });
-Route::get('/blog-list', function () {
-    return view('blog.blog-list');
-});
+Route::get('/blog-list', [PostController::class, 'index']);
+//Route::get('/blog-list', function () {
+//
+//    return view('blog.blog-list');
+//});
 Route::get('/about', function () {
     return view('home.about');
 });
@@ -44,13 +47,13 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 
 //route group
-Route::prefix('dashboard')->group(function (){
-Route::get('/profile', [AuthController::class, 'profile'])->middleware('auth')->name('user-profile');
-Route::get('/inbox', [AuthController::class, 'inbox'])->middleware('auth')->name('user-inbox');
-Route::get('/setting', [AuthController::class, 'setting'])->middleware('auth')->name('user-setting');
+Route::prefix('dashboard')->group(function () {
+    Route::get('/profile', [AuthController::class, 'profile'])->middleware('auth')->name('user-profile');
+    Route::get('/inbox', [AuthController::class, 'inbox'])->middleware('auth')->name('user-inbox');
+    Route::get('/setting', [AuthController::class, 'setting'])->middleware('auth')->name('user-setting');
 });
 
 //if page not found load 404
-Route::fallback(function(){
+Route::fallback(function () {
     return view('404');
 });

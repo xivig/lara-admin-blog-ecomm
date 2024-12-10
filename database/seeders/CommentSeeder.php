@@ -60,13 +60,14 @@ class CommentSeeder extends Seeder
 
         foreach ($comments as $comment) {
             // Randomly pick a comment from the $comments array
-            $comment = $comments[array_rand($comments)];
+//            $comment = $comments[array_rand($comments)];
 
             // Create the category using a factory
             Comment::factory()->create([
-                'name' => $comment,  // Set the category name
+                'user_id' => fake()->biasedNumberBetween(1),
+                'post_id' => fake()->biasedNumberBetween(1),
                 'comment' => $comment,  // Set a random comment
-                'status' => fake()->boolean(1),  // Set random status (80% chance of true)
+
             ]);
         }
     }
