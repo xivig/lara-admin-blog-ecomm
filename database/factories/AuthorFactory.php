@@ -19,7 +19,7 @@ class AuthorFactory extends Factory
     {
 
         return [
-            'user_id' => fake()->biasedNumberBetween(1),
+            'user_id' => fake()->numberBetween(1,50),
             'nickname' => fake()->firstNameMale(),
         ];
     }
