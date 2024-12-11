@@ -1,6 +1,5 @@
-@extends('home')
-@section('title', 'Home page')
-@section('content')
+<?php $__env->startSection('title', 'Home page'); ?>
+<?php $__env->startSection('content'); ?>
 
 <!-- Slider Start -->
 <section class="slider">
@@ -281,7 +280,7 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-4 col-md-6 mb-5">
 				<div class="card bg-transparent border-0">
-					<img loading="lazy" src="{{asset('xivig-blog/images/blog/1.jpg')}}" alt="blog" class="img-fluid rounded">
+					<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/1.jpg')); ?>" alt="blog" class="img-fluid rounded">
 
 					<div class="card-body mt-2">
 						<div class="blog-item-meta">
@@ -299,7 +298,7 @@
 
 			<div class="col-lg-4 col-md-6 mb-5">
 				<div class="card border-0 bg-transparent">
-					<img loading="lazy" src="{{asset('xivig-blog/images/blog/2.jpg')}}" alt="blog" class="img-fluid rounded">
+					<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/2.jpg')); ?>" alt="blog" class="img-fluid rounded">
 
 					<div class="card-body mt-2">
 						<div class="blog-item-meta">
@@ -318,7 +317,7 @@
 
 			<div class="col-lg-4 col-md-6 mb-5">
 				<div class="card border-0 bg-transparent">
-					<img loading="lazy" src="{{asset('xivig-blog/images/blog/3.jpg')}}" alt="blog" class="img-fluid rounded">
+					<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/3.jpg')); ?>" alt="blog" class="img-fluid rounded">
 
 					<div class="card-body mt-2">
 						<div class="blog-item-meta">
@@ -346,10 +345,12 @@
 					<h2 class="mt-2 mb-4 mb-lg-0">Entrust Your Project to Our Best Team of Professionals</h2>
 				</div>
 				<div class="col-lg-4">
-					<a href="{{url('/contact')}}" class="btn btn-main btn-round-full float-lg-right ">Contact Us</a>
+					<a href="<?php echo e(url('/contact')); ?>" class="btn btn-main btn-round-full float-lg-right ">Contact Us</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('home', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\laravel_project_all\1\lara-admin-blog-ecomm\resources\views/home/content.blade.php ENDPATH**/ ?>

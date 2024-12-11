@@ -29,7 +29,7 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6 mb-5">
 						<div class="blog-item">
-							<img loading="lazy" src="{{asset('xivig-blog/images/blog/1.jpg')}}" alt="blog" class="img-fluid rounded">
+							<img loading="lazy" src="{{  asset('xivig-blog/images/blog/1.jpg')}}" alt="blog" class="img-fluid rounded">
 
 							<div class="blog-item-content bg-white p-4">
 								<div class="blog-item-meta  py-1 px-2">

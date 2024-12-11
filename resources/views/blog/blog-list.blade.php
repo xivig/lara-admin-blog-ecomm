@@ -13,12 +13,14 @@
                         <div class="blog-item">
 
                             {{--                                <img loading="lazy" src="{{$image->link}}" alt="blog"--}}
-                            <img loading="lazy" src="{{asset('xivig-blog/images/blog/1.jpg')}}" alt="blog"
+                            <img loading="lazy" src="{{$post->image->link}}" alt="blog"
                                  class="img-fluid rounded">
 
                             <div class="blog-item-content bg-white p-4">
                                 <div class="blog-item-meta  py-1 px-2">
-                                    <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>
+                                    <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>{{$post->category->name}}</span>
+                                    <span class="text-black text-capitalize mr-3"><i class="ti-user mr-2"></i>{{$post->user->name}}</span>
+                                    <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->tag->name}}</span>
                                 </div>
 
                                 <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">{{$post->title}}</a>

@@ -18,12 +18,12 @@ class DatabaseSeeder extends Seeder
     {
 
 //        alternate method
-//        $this->call([
-//            TagSeeder::class,
-//            PictureSeeder::class,
-//            PostSeeder::class,
-//            CommentSeeder::class,
-//        ]);
+        $this->call([
+            TagSeeder::class,
+            PictureSeeder::class,
+            PostSeeder::class,
+            CommentSeeder::class,
+        ]);
 
         User::factory(100)->create();
 //         Category::factory(100)->create();
