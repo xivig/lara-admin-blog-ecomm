@@ -1,3 +1,4 @@
+@use('Illuminate\Support\Str')
 @extends('blog')
 @section('title', 'Blog page')
 {{--@section('title', 'Contact Us')--}}
@@ -21,12 +22,13 @@
                                     <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>{{$post->category->name}}</span>
                                     <span class="text-black text-capitalize mr-3"><i class="ti-user mr-2"></i>{{$post->user->name}}</span>
                                     <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->tag->name}}</span>
-                                    <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->author->nickname}}</span>
+                                    {{--                                    <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->author->nickname}}</span>--}}
                                 </div>
 
-                                <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">{{$post->title}}</a>
+                                <h3 class="mt-3 mb-3"><a
+                                        href="{{url('blog-post')}}">{{Str::limit($post->title, 20, '...')}}</a>
                                 </h3>
-                                <p class="mb-4">{{$post->excerpt}}</p>
+                                <p class="mb-4">{{Str::limit($post->excerpt, 50, '...')}}</p>
 
                                 <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn
                                     More</a>

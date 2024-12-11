@@ -1,3 +1,5 @@
+<?php use \Illuminate\Support\Str; ?>
+
 <?php $__env->startSection('title', 'Blog page'); ?>
 
 
@@ -20,12 +22,13 @@
                                     <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i><?php echo e($post->category->name); ?></span>
                                     <span class="text-black text-capitalize mr-3"><i class="ti-user mr-2"></i><?php echo e($post->user->name); ?></span>
                                     <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i><?php echo e($post->tag->name); ?></span>
-                                    <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i><?php echo e($post->author->nickname); ?></span>
+                                    
                                 </div>
 
-                                <h3 class="mt-3 mb-3"><a href="<?php echo e(url('blog-post')); ?>"><?php echo e($post->title); ?></a>
+                                <h3 class="mt-3 mb-3"><a
+                                        href="<?php echo e(url('blog-post')); ?>"><?php echo e(Str::limit($post->title, 20, '...')); ?></a>
                                 </h3>
-                                <p class="mb-4"><?php echo e($post->excerpt); ?></p>
+                                <p class="mb-4"><?php echo e(Str::limit($post->excerpt, 50, '...')); ?></p>
 
                                 <a href="<?php echo e(url('blog-post')); ?>" class="btn btn-small btn-main btn-round-full">Learn
                                     More</a>
