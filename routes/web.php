@@ -9,13 +9,19 @@ Route::get('/', function () {
     $title = 'Home page';
     return view('home.content', ['title' => $title]);
 });
+
 Route::get('/blog', function () {
     return view('blog.blog-content');
 });
-Route::get('/blog-post/{$slug}', function () {
-    $posts = Post::all();
-    return view('blog.blog-post',compact('posts'));
-})->name('slug');
+
+Route::get('/blog/{slug}', [PostController::class, 'singlePost']
+
+//function () {
+//    $posts = Post::all();
+//    return view('blog.blog-post',compact('posts'));}
+
+)->name('single-post');
+
 Route::get('/blog-list', [PostController::class, 'index']);
 //Route::get('/blog-list', function () {
 //

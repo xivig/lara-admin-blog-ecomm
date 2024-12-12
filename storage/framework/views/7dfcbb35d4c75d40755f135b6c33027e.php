@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', 'Blog page'); ?>
 
 
@@ -12,6 +11,7 @@
 					<div class="col-lg-12 mb-5">
 						<div class="single-blog-item">
 							<img loading="lazy" src="<?php echo e(asset('xivig-blog/images/blog/3.jpg')); ?>" alt="blog" class="img-fluid rounded">
+							<img loading="lazy" src="<?php echo e($post->image->link); ?>" alt="blog" class="img-fluid rounded">
 
 							<div class="blog-item-content bg-white p-5">
 								<div class="blog-item-meta bg-gray pt-2 pb-1 px-3">
@@ -20,9 +20,8 @@
 									<span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 28th January</span>
 								</div>
 
-								<h2 class="mt-3 mb-4">Improve design with typography?</h2>
-								<p class="lead mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur
-									accusantium pariatur repudiandae!</p>
+								<h2 class="mt-3 mb-4"><?php echo e($post->title); ?></h2>
+								<p class="lead mb-4"><?php echo e($post->content); ?></p>
 
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero
 									vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam

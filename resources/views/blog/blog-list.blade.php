@@ -7,101 +7,100 @@
 @section('content')
     <section class="section blog-wrap bg-gray">
         <div class="container">
-            <div class="row">
-                @foreach($posts as $post)
-                    {{--                    @foreach($images as $image)--}}
-                    <div class="col-lg-6 col-md-6 mb-5">
-                        <div class="blog-item">
+            @if(count($posts)> 0)
+                <div class="row">
+                    @foreach($posts as $post)
 
-                            {{--                                <img loading="lazy" src="{{$image->link}}" alt="blog"--}}
-                            <img loading="lazy" src="{{$post->image->link}}" alt="blog"
-                                 class="img-fluid rounded">
+                        <div class="col-lg-6 col-md-6 mb-5">
+                            <div class="blog-item">
 
-                            <div class="blog-item-content bg-white p-4">
-                                <div class="blog-item-meta  py-1 px-2">
-                                    <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>{{$post->category->name}}</span>
-                                    <span class="text-black text-capitalize mr-3"><i class="ti-user mr-2"></i>{{$post->user->name}}</span>
-                                    <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->tag->name}}</span>
-                                    {{--                                    <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->author->nickname}}</span>--}}
+                                <img loading="lazy" src="{{$post->image->link}}" alt="blog"
+                                     class="img-fluid rounded">
+
+                                <div class="blog-item-content bg-white p-4">
+                                    <div class="blog-item-meta  py-1 px-2">
+                                        <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>{{$post->category->name}}</span>
+                                        <span class="text-black text-capitalize mr-3"><i class="ti-user mr-2"></i>{{$post->user->name}}</span>
+                                        <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->tag->name}}</span>
+                                        {{--                                    <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i>{{$post->author->nickname}}</span>--}}
+                                    </div>
+
+                                    <h3 class="mt-3 mb-3"><a
+                                            href="{{route('single-post', $post->slug)}}">{{Str::limit($post->title, 20, '...')}}</a>
+                                    </h3>
+                                    <p class="mb-4">{{Str::limit($post->excerpt, 50, '...')}}</p>
+
+                                    <a href="{{route('single-post', $post->slug)}}" class="btn btn-small btn-main btn-round-full">Learn
+                                        More</a>
                                 </div>
-
-                                <h3 class="mt-3 mb-3"><a
-                                        href="{{route('slug', $post->slug)}}">{{Str::limit($post->title, 20, '...')}}</a>
-                                </h3>
-                                <p class="mb-4">{{Str::limit($post->excerpt, 50, '...')}}</p>
-
-                                <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn
-                                    More</a>
                             </div>
                         </div>
-                    </div>
-                    {{--                    @endforeach--}}
-                @endforeach
-                {{--                <div class="col-lg-6 col-md-6 mb-5">--}}
-                {{--                    <div class="blog-item">--}}
-                {{--                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/2.jpg')}}" alt="blog"--}}
-                {{--                             class="img-fluid rounded">--}}
+                        {{--                    @endforeach--}}
+                    @endforeach
+                    {{--                <div class="col-lg-6 col-md-6 mb-5">--}}
+                    {{--                    <div class="blog-item">--}}
+                    {{--                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/2.jpg')}}" alt="blog"--}}
+                    {{--                             class="img-fluid rounded">--}}
 
-                {{--                        <div class="blog-item-content bg-white p-4">--}}
-                {{--                            <div class="blog-item-meta  py-1 px-2">--}}
-                {{--                                <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>--}}
-                {{--                            </div>--}}
+                    {{--                        <div class="blog-item-content bg-white p-4">--}}
+                    {{--                            <div class="blog-item-meta  py-1 px-2">--}}
+                    {{--                                <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>--}}
+                    {{--                            </div>--}}
 
-                {{--                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>--}}
-                {{--                            </h3>--}}
-                {{--                            <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur--}}
-                {{--                                accusantium--}}
-                {{--                                pariatur repudiandae!</p>--}}
+                    {{--                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>--}}
+                    {{--                            </h3>--}}
+                    {{--                            <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur--}}
+                    {{--                                accusantium--}}
+                    {{--                                pariatur repudiandae!</p>--}}
 
-                {{--                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
+                    {{--                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
 
-                {{--                <div class="col-lg-6 col-md-6 mb-5">--}}
-                {{--                    <div class="blog-item">--}}
-                {{--                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/3.jpg')}}" alt="blog"--}}
-                {{--                             class="img-fluid rounded">--}}
+                    {{--                <div class="col-lg-6 col-md-6 mb-5">--}}
+                    {{--                    <div class="blog-item">--}}
+                    {{--                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/3.jpg')}}" alt="blog"--}}
+                    {{--                             class="img-fluid rounded">--}}
 
-                {{--                        <div class="blog-item-content bg-white p-4">--}}
-                {{--                            <div class="blog-item-meta  py-1 px-2">--}}
-                {{--                                <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>--}}
-                {{--                            </div>--}}
+                    {{--                        <div class="blog-item-content bg-white p-4">--}}
+                    {{--                            <div class="blog-item-meta  py-1 px-2">--}}
+                    {{--                                <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>--}}
+                    {{--                            </div>--}}
 
-                {{--                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>--}}
-                {{--                            </h3>--}}
-                {{--                            <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur--}}
-                {{--                                accusantium--}}
-                {{--                                pariatur repudiandae!</p>--}}
+                    {{--                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>--}}
+                    {{--                            </h3>--}}
+                    {{--                            <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur--}}
+                    {{--                                accusantium--}}
+                    {{--                                pariatur repudiandae!</p>--}}
 
-                {{--                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
-                {{--                <div class="col-lg-6 col-md-6 mb-5">--}}
-                {{--                    <div class="blog-item">--}}
-                {{--                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/4.jpg')}}" alt="blog"--}}
-                {{--                             class="img-fluid rounded">--}}
+                    {{--                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
+                    {{--                <div class="col-lg-6 col-md-6 mb-5">--}}
+                    {{--                    <div class="blog-item">--}}
+                    {{--                        <img loading="lazy" src="{{asset('xivig-blog/images/blog/4.jpg')}}" alt="blog"--}}
+                    {{--                             class="img-fluid rounded">--}}
 
-                {{--                        <div class="blog-item-content bg-white p-4">--}}
-                {{--                            <div class="blog-item-meta  py-1 px-2">--}}
-                {{--                                <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>--}}
-                {{--                            </div>--}}
+                    {{--                        <div class="blog-item-content bg-white p-4">--}}
+                    {{--                            <div class="blog-item-meta  py-1 px-2">--}}
+                    {{--                                <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>Creativity</span>--}}
+                    {{--                            </div>--}}
 
-                {{--                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>--}}
-                {{--                            </h3>--}}
-                {{--                            <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur--}}
-                {{--                                accusantium--}}
-                {{--                                pariatur repudiandae!</p>--}}
+                    {{--                            <h3 class="mt-3 mb-3"><a href="{{url('blog-post')}}">Improve design with typography?</a>--}}
+                    {{--                            </h3>--}}
+                    {{--                            <p class="mb-4">Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur--}}
+                    {{--                                accusantium--}}
+                    {{--                                pariatur repudiandae!</p>--}}
 
-                {{--                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                </div>--}}
+                    {{--                            <a href="{{url('blog-post')}}" class="btn btn-small btn-main btn-round-full">Learn More</a>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                </div>--}}
 
-            </div>
-
-            <div class="row justify-content-center mt-5">
+                </div>
+                <div class="row justify-content-center mt-5">
                 <div class="col-lg-6 text-center">
 
                     <nav class="navigation pagination d-inline-block">
@@ -116,6 +115,13 @@
                     </nav>
                 </div>
             </div>
+            @else
+                <div class="text-center text-warning">
+                    <h3>No post Found</h3>
+                </div>
+
+            @endif
+
         </div>
     </section>
 @endsection

@@ -12,6 +12,7 @@
 					<div class="col-lg-12 mb-5">
 						<div class="single-blog-item">
 							<img loading="lazy" src="{{asset('xivig-blog/images/blog/3.jpg')}}" alt="blog" class="img-fluid rounded">
+							<img loading="lazy" src="{{$post->image->link}}" alt="blog" class="img-fluid rounded">
 
 							<div class="blog-item-content bg-white p-5">
 								<div class="blog-item-meta bg-gray pt-2 pb-1 px-3">

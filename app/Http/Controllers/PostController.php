@@ -19,6 +19,23 @@ class PostController extends Controller
         return view('blog.blog-list',compact('posts', 'images'));
     }
 
+
+    /**
+     * Display a single post of the resource.
+     */
+    public function singlePost($slug)
+    {
+
+
+         $post = Post::where('slug', $slug)->first();
+//        $post = Post::find($id);
+//        if (! $post){
+//            abort(404);
+//        }
+//        return $post;
+        return view('blog.blog-post', compact('post'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
