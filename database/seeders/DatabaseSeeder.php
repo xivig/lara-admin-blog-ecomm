@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             CommentSeeder::class,
         ]);
 
-        User::factory(100)->create();
+        User::factory(50)->create();
 //         Category::factory(100)->create();
          Author::factory(50)->create();
 

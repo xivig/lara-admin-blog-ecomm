@@ -19,10 +19,10 @@
 
                                 <div class="blog-item-content bg-white p-4">
                                     <div class="blog-item-meta  py-1 px-2">
-                                        <span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i><?php echo e($post->category->name); ?></span>
-                                        <span class="text-black text-capitalize mr-3"><i class="ti-user mr-2"></i><?php echo e($post->user->name); ?></span>
-                                        <span class="text-warning text-capitalize mr-3"><i class="ti-crown mr-2"></i><?php echo e($post->tag->name); ?></span>
-                                        
+                                        <span class="text-primary text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i><?php echo e($post->category->name); ?></span>
+                                        <span class="text-danger text-capitalize mr-3"><i class="ti-user mr-2"></i><?php echo e($post->user ? $post->user->name : ''); ?></span>
+                                        <span class="text-warning text-capitalize mr-3"><i class="ti-bookmark mr-2"></i><?php echo e($post->tag->name); ?></span>
+                                        <span class="text-success text-capitalize mr-3"><i class="ti-crown mr-2"></i><?php echo e($post->author->nickname ?? ''); ?></span>
                                     </div>
 
                                     <h3 class="mt-3 mb-3"><a
@@ -30,92 +30,33 @@
                                     </h3>
                                     <p class="mb-4"><?php echo e(Str::limit($post->excerpt, 50, '...')); ?></p>
 
-                                    <a href="<?php echo e(route('single-post', $post->slug)); ?>" class="btn btn-small btn-main btn-round-full">Learn
+                                    <a href="<?php echo e(route('single-post', $post->slug)); ?>"
+                                       class="btn btn-small btn-main btn-round-full">Learn
                                         More</a>
                                 </div>
                             </div>
                         </div>
-                        
+
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                    
-                    
-                    
-                    
 
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    
 
                 </div>
                 <div class="row justify-content-center mt-5">
-                <div class="col-lg-6 text-center">
+                    <div class="col-lg-6 text-center">
 
-                    <nav class="navigation pagination d-inline-block">
-                        <div class="nav-links">
+                        <nav class="navigation pagination d-inline-block">
+                            <div class="nav-links">
 
-                            
-                            
-                            
-                            <?php echo e($posts->links()); ?>
+                                
+                                
+                                
+                                <?php echo e($posts->links()); ?>
 
-                            
-                        </div>
-                    </nav>
+                                
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </div>
             <?php else: ?>
                 <div class="text-center text-warning">
                     <h3>No post Found</h3>

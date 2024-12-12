@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('user_id')->constrained('users');
             $table->foreignId('category_id')->constrained();
             $table->foreignId('tag_id')->constrained();
             $table->foreignId('image_id')->constrained('pictures');
-            $table->foreignId('author_id')->constrained();
+            $table->foreignId('author_id')->constrained('authors');
             $table->string('title');
             $table->string('slug');
             $table->longText('content')->nullable();

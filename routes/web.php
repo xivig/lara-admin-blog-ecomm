@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\Front\BlogController;
 use App\Http\Controllers\PostController;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
@@ -10,17 +11,13 @@ Route::get('/', function () {
     return view('home.content', ['title' => $title]);
 });
 
-Route::get('/blog', function () {
-    return view('blog.blog-content');
-});
+//Route::get('/blog', function () {
+//    return view('blog.blog-content');
+//});
 
-Route::get('/blog/{slug}', [PostController::class, 'singlePost']
-
-//function () {
-//    $posts = Post::all();
-//    return view('blog.blog-post',compact('posts'));}
-
-)->name('single-post');
+Route::get('/blog', [BlogController::class, 'index'])->name('single-post');
+Route::get('/blog/{slug}', [BlogController::class, 'singlePost'])->name('single-post');
+//Route::get('/blog/{slug}', [PostController::class, 'singlePost'])->name('single-post');
 
 Route::get('/blog-list', [PostController::class, 'index']);
 //Route::get('/blog-list', function () {
