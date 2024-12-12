@@ -19,8 +19,8 @@ return new class extends Migration
             $table->foreignId('image_id')->constrained('pictures');
             $table->foreignId('author_id')->constrained();
             $table->string('title');
-            $table->longText('content')->nullable();
             $table->string('slug');
+            $table->longText('content')->nullable();
             $table->string('excerpt');
             $table->boolean('status')->default(false);
             $table->timestamps();

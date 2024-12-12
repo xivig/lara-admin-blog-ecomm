@@ -26,7 +26,7 @@
                                 </div>
 
                                 <h3 class="mt-3 mb-3"><a
-                                        href="{{url('blog-post')}}">{{Str::limit($post->title, 20, '...')}}</a>
+                                        href="{{route('slug', $post->slug)}}">{{Str::limit($post->title, 20, '...')}}</a>
                                 </h3>
                                 <p class="mb-4">{{Str::limit($post->excerpt, 50, '...')}}</p>
 

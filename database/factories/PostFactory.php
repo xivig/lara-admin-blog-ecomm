@@ -23,10 +23,9 @@ class PostFactory extends Factory
            'tag_id' => fake()->biasedNumberBetween(1),
            'image_id' => fake()->biasedNumberBetween(1),
            'author_id' => fake()->biasedNumberBetween(1),
-
             'title' => fake()->sentence(10),
-            'content' => fake()->sentence(100),
             'slug' => fake()->slug(5),
+            'content' => fake()->sentence(100),
             'excerpt' => fake()->sentence(15),
             'status' => fake()->boolean(80),
         ];

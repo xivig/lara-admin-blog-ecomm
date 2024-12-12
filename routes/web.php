@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\PostController;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,9 +12,10 @@ Route::get('/', function () {
 Route::get('/blog', function () {
     return view('blog.blog-content');
 });
-Route::get('/blog-post', function () {
-    return view('blog.blog-post');
-});
+Route::get('/blog-post/{$slug}', function () {
+    $posts = Post::all();
+    return view('blog.blog-post',compact('posts'));
+})->name('slug');
 Route::get('/blog-list', [PostController::class, 'index']);
 //Route::get('/blog-list', function () {
 //
@@ -54,6 +56,6 @@ Route::prefix('dashboard')->group(function () {
 });
 
 //if page not found load 404
-Route::fallback(function () {
-    return view('404');
-});
+//Route::fallback(function () {
+//    return view('404');
+//});

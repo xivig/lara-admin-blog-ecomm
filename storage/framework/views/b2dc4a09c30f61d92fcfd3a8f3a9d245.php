@@ -26,7 +26,7 @@
                                 </div>
 
                                 <h3 class="mt-3 mb-3"><a
-                                        href="<?php echo e(url('blog-post')); ?>"><?php echo e(Str::limit($post->title, 20, '...')); ?></a>
+                                        href="<?php echo e(route('slug', $post->slug)); ?>"><?php echo e(Str::limit($post->title, 20, '...')); ?></a>
                                 </h3>
                                 <p class="mb-4"><?php echo e(Str::limit($post->excerpt, 50, '...')); ?></p>
 
